@@ -1,0 +1,161 @@
+:root {
+  --text-color: #ffffff;
+  --baground-color: #1b1919;
+  --select-color: gold;
+}
+
+body {
+  background-color: var(--baground-color);
+  color: var(--text-color);
+}
+
+a {
+  text-decoration: none;
+}
+.fixed-header {
+  position: sticky;
+  top: 0px;
+}
+.navbar {
+  display: flex;
+  width: 100%;
+  background-color: var(--baground-color);
+  justify-content: space-between;
+  border-bottom: 1px solid var(--text-color);
+  font-size: 2vw;
+  align-items: center;
+}
+
+.box {
+  height: 500px;
+  width: 500px;
+  background-color: burlywood;
+  text-align: center;
+  margin: 20px 20px;
+  color: red;
+  font-size: 10vw;
+}
+
+#logo-img {
+  max-width: 10%;
+  margin-left: 5%;
+}
+
+.navbar__icons ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  margin: 0px;
+  padding: 0px;
+}
+
+i {
+  color: var(--text-color);
+}
+
+i:hover {
+  color: gold;
+}
+
+.navbar__icons li {
+  padding: 8px 12px;
+}
+
+.copyright {
+  text-align: center;
+}
+.footer {
+  position: relative;
+  bottom: 0px;
+  border-top: 1px solid var(--text-color);
+}
+
+.sidebar {
+  display: none;
+  position: absolute;
+  right: 0px;
+  height: 300px;
+  width: 15%;
+}
+
+.main-body {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.x-btn {
+  font-size: 3vw;
+  height: 20%;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  border-bottom: var(--text-color) solid 1px;
+}
+.category {
+  height: 60%;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+}
+
+.category ul li {
+  padding-bottom: 0.7vw;
+}
+
+.category-name {
+  font-size: 2vw;
+}
+
+.sidebar-icons {
+  left: 0px;
+  height: 30%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+#sidebar-github-icon {
+  display: none;
+}
+#sidebar-youtube-icon {
+  display: none;
+}
+.sidebar-icons ul {
+  font-size: 3vw;
+  list-style: none;
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.category {
+  padding: auto;
+  border-bottom: var(--text-color) solid 1px;
+}
+
+.category ul {
+  list-style: none;
+  margin-bottom: 5%;
+  width: auto;
+}
+
+ul {
+  padding: 0px;
+  margin: 0px;
+}
+
+@media screen and (max-width: 700px) {
+  #youtube-icon {
+    display: none;
+  }
+  #github-icon {
+    display: none;
+  }
+  #sidebar-github-icon {
+    display: block;
+  }
+  #sidebar-youtube-icon {
+    display: block;
+  }
+  #light-icon {
+    display: none;
+  }
+}
